@@ -12,3 +12,16 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model feeling {
+  id Int @id @default(autoincrement())
+  timestamp DateTime @default(now())
+  over Int
+  message String?
+}
+
+model logins {
+  id      Int @id @default(autoincrement())
+  token   String
+  expires DateTime
+}
