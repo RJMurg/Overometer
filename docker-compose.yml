@@ -4,6 +4,7 @@ services:
     container_name: overometer
     environment:
       DATABASE_URL: postgresql://prisma:prisma@db:5432/prismadb?schema=public
+      ADMIN_PASSWORD: password
     depends_on:
       - db
     networks:
