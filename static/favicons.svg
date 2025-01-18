@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 94" width="512" height="512">
+	<title>Doomsday Clock - 90 seconds to midnight</title>
+	<path d="m86,16.282A64,64,0,0,0,16.282,86H8.25A72,72,0,0,1,86,8.25z"/>
+	<circle cx="80" cy="30" r="6"/>
+	<circle cx="55" cy="36.699" r="6"/>
+	<circle cx="36.699" cy="55" r="6"/>
+	<circle cx="30" cy="80" r="6"/>
+	<path d="m78.319,43.818l-7.901,1.251,6.166,38.931h7.416v-36h-5.019l-.662-4.182Z"/>
+</svg>
