@@ -25,6 +25,10 @@
 	let feeling = $derived(live ? feelingObject : data);
 </script>
 
+<svelte:head>
+	<title>Ruán's Overometer</title>
+</svelte:head>
+
 <Background overPercent={feeling.over} />
 <StateCard
 	overPercent={feeling.over}
