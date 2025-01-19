@@ -48,7 +48,7 @@
 			<div class="space-y-2">
 				<h4 class="font-medium leading-none">Live Update</h4>
 				<p class="text-sm text-muted-foreground">
-					Overometer will automatically update how over or back it is for Ruán.
+					Overometer will automatically update how over or back it is, whenever it changes.
 					<br />
 					<br />
 					If you want to minimise data usage, you can disable this feature.
