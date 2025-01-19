@@ -23,6 +23,9 @@
 	});
 
 	let feeling = $derived(live ? feelingObject : data);
+	let feelingTime = $derived(
+		feeling.timestamp.toLocaleDateString() + ' @ ' + feeling.timestamp.toLocaleTimeString()
+	);
 </script>
 
 <svelte:head>
@@ -30,11 +33,7 @@
 </svelte:head>
 
 <Background overPercent={feeling.over} />
-<StateCard
-	overPercent={feeling.over}
-	time={feeling.timestamp.toLocaleDateString() + ' @ ' + feeling.timestamp.toLocaleTimeString()}
-	message={feeling.message}
-/>
+<StateCard overPercent={feeling.over} time={feelingTime} message={feeling.message} />
 
 <Popover.Root portal={null}>
 	<Popover.Trigger asChild let:builder>
